@@ -2,6 +2,14 @@
 (add-to-list 'load-path (expand-file-name "~/workspace/emacs_config/elisp"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/auto-install"))
 
+; Set tab size to 4
+(setq default-tab-width 4)
+
+; C style and basic offset; also keep tabs as tabs
+(setq c-default-style "stroustrup"
+      c-basic-offset 4
+	  indent-tabs-mode t)
+
 ; enable column number and line number mode
 (line-number-mode 1)
 (column-number-mode 1)
