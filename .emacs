@@ -19,7 +19,7 @@
 ; Automatically start fci-mode automatically 
 (add-hook 'after-change-major-mode-hook 'fci-mode)
 ; By defaults this value is 70; changing it to 80
-(setq-default fill-column 80)
+(setq-default fill-column 78)
 
 ; USELESS STUFFS BELOW
 
