@@ -1,0 +1,3 @@
+To simply use the .emacs file, copy it to your home directory. The .emacs is a hidden file under unix based machines so use `ls -a` to see it listed. 
+
+The .emacs file uses many downloaded elisp files, which can be found under the "elisp" directory. For simplicity copy these files into "~/.emacs.d/auto-install" or place it any directory and edit the .emacs and it to the load-path.
