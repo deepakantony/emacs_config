@@ -3,10 +3,11 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/auto-install"))
 
 ; Set tab size to 4
-(setq default-tab-width 4)
+(setq-default tab-width 4)
 
 ; C style and basic offset; also keep tabs as tabs
-(setq c-default-style "stroustrup"
+(setq c-default-style
+      '((java-mode . "java") (awk-mode . "awk") (other . "stroustrup"))
       c-basic-offset 4
 	  indent-tabs-mode t)
 
