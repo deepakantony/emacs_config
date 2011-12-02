@@ -1,6 +1,7 @@
 ; This is where I will place my downloaded emacs elisp files
 (add-to-list 'load-path (expand-file-name "~/workspace/emacs_config/elisp"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/auto-install"))
+(add-to-list 'load-path (expand-file-name "~/elisp"))
 
 ; Set tab size to 4
 (setq-default tab-width 4)
@@ -28,7 +29,7 @@
 ; Automatically start fci-mode automatically 
 (add-hook 'after-change-major-mode-hook 'fci-mode)
 ; By defaults this value is 70; changing it to 80
-(setq-default fill-column 78)
+(setq-default fill-column 80)
 
 ; USELESS STUFFS BELOW
 
