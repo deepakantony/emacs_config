@@ -18,3 +18,15 @@ $ vi /usr/bin/emacs
 #!/bin/bash
 /cygdrive/c/emacs-24.1/bin/emacs.exe $1
 $ chmod +x /usr/bin/emacs
+
+In mac, the edit on the /usr/bin/emacs would look like this (I think this is best for other OS's too).
+$ vi /usr/bin/emacs
+EMACS_PATH=/Applications/Emacs.app/Contents/MacOS/Emacs
+
+if [ $(id -u) = "0" ]; then
+    sudo $EMACS_PATH $*
+else
+    $EMACS_PATH $*
+fi
+
+$ chmod +x /usr/bin/emacs
