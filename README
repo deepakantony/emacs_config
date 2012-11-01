@@ -14,7 +14,7 @@ Here is a sample run in cygwin:
 $ which emacs
 /usr/bin/emacs
 $ mv /usr/bin/emacs /usr/bin/emacs.old
-$ vi /usr/bin/emacs
+$ vi /usr/bin/emacs # this is too simplistic; use a script similar to the one used for mac as shown below.
 #!/bin/bash
 /cygdrive/c/emacs-24.1/bin/emacs.exe $1
 $ chmod +x /usr/bin/emacs
@@ -30,3 +30,5 @@ else
 fi
 
 $ chmod +x /usr/bin/emacs
+
+On Window, when you open a file without using cygwin, you can use the same emacs profile as the one used for cygwin by just pointing the environment variable HOME to the path to cygwin's home directory that has the .emacs file. For example: SET HOME=C:\cygwin\home\deepak\ under environment variables.
