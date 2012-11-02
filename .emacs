@@ -35,6 +35,11 @@
 (require 'linum)
 (global-linum-mode 1)
 
+; Color themes for something better than white background
+(require 'color-theme)
+(color-theme-initialize)
+(color-theme-lethe)
+
 ; USELESS STUFFS BELOW
 
 ;(fci-mode 1)
