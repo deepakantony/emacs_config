@@ -38,7 +38,10 @@
 ; Color themes for something better than white background
 (require 'color-theme)
 (color-theme-initialize)
-(color-theme-arjen)
+(color-theme-charcoal-black)
+
+; Color theme zenburn
+(load-theme 'zenburn)
 
 ; USELESS STUFFS BELOW
 
