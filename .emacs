@@ -38,7 +38,7 @@
 ; Color themes for something better than white background
 (require 'color-theme)
 (color-theme-initialize)
-(color-theme-lethe)
+(color-theme-arjen)
 
 ; USELESS STUFFS BELOW
 
