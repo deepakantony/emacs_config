@@ -31,6 +31,10 @@
 ; By defaults this value is 70; changing it to 80
 (setq-default fill-column 80)
 
+; This module displays line number for all lines
+(require 'linum)
+(global-linum-mode 1)
+
 ; USELESS STUFFS BELOW
 
 ;(fci-mode 1)
