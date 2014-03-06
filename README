@@ -14,9 +14,15 @@ Here is a sample run in cygwin:
 $ which emacs
 /usr/bin/emacs
 $ mv /usr/bin/emacs /usr/bin/emacs.old
-$ vi /usr/bin/emacs # this is too simplistic; use a script similar to the one used for mac as shown below.
+$ vi /usr/bin/emacs # this one works only in cygwin
 #!/bin/bash
-/cygdrive/c/emacs-24.1/bin/emacs.exe $1
+if [ $# -gt 0 ]
+then
+	/cygdrive/c/emacs-24.2/bin/emacs "$(cygpath -w $1)"
+else 
+	/cygdrive/c/emacs-24.2/bin/emacs
+fi
+
 $ chmod +x /usr/bin/emacs
 
 In mac, the edit on the /usr/bin/emacs would look like this (I think this is best for other OS's too).
